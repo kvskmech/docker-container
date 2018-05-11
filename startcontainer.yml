@@ -5,7 +5,7 @@
       docker_container:
          image: ubuntuansible2
          name: "ubunt{{item}}"
-         state: present
+         state: started
          ports:
             - "210{{item}}:22"
             - "810{{item}}:80"
@@ -16,7 +16,7 @@
       docker_container:
          image: ansible-centos2
          name: "cento{{item}}"
-         state: present
+         state: started
          ports:
             - "230{{item}}:22"
             - "830{{item}}:80"

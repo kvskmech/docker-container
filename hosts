@@ -1,0 +1,14 @@
+[all]
+ubunt1 ansible_port=2101
+ubunt2 ansible_port=2102
+cento1 ansible_port=2301
+cento2 ansible_port=2302
+
+
+[all:vars]
+ansible_host=localhost
+ansible_user=root
+ansible_become_user=root
+ansible_become_password=root
+ansible_private_key_file=/root/.ssh/id_rsa
+
