@@ -1,5 +1,10 @@
 - name: Manage Nginx
   hosts: all
+  vars:
+     - greeting_message: "DevOps"
+     - provisioner_tool: "Ansible"
+     - automation_tool: "Python"
+
   tasks:
     - name: Install nginx
       apt: name=nginx state=present update_cache=yes
