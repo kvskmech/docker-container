@@ -9,7 +9,7 @@
          ports:
             - "210{{item}}:22"
             - "810{{item}}:80"
-      with_sequences: start=1 end=2
+      with_sequence: start=1 end=2
 
 
     - name: Start centos contianers
@@ -20,5 +20,5 @@
          ports:
             - "230{{item}}:22"
             - "830{{item}}:80"
-      with_sequences: start=1 end=2
+      with_sequence: start=1 end=2
 
