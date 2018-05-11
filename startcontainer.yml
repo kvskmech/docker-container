@@ -6,7 +6,7 @@
          image: ubuntuansible
          state: present
          ports:
-            - "210{{iten}}:22"
+            - "210{{item}}:22"
             - "810{{item}}:80"
       with_sequences: start=1 end=2
 
@@ -16,7 +16,7 @@
          image: ansible-centos
          state: present
          ports:
-            - "230{{iten}}:22"
+            - "230{{item}}:22"
             - "830{{item}}:80"
       with_sequences: start=1 end=2
 
