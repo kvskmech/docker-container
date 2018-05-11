@@ -3,7 +3,8 @@
   tasks:
     - name: Start Ubuntu contianers
       docker_container:
-         image: ubuntuansible
+         image: ubuntuansible2
+         name: "ubunt{{item}}"
          state: present
          ports:
             - "210{{item}}:22"
@@ -13,7 +14,8 @@
 
     - name: Start centos contianers
       docker_container:
-         image: ansible-centos
+         image: ansible-centos2
+         name: "cento{{item}}"
          state: present
          ports:
             - "230{{item}}:22"
